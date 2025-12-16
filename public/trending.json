@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "rating": 4,
+    "price": "12.99",
+    "orgprice": "15.99",
+    "isPopular": true
+  },
+  {
+    "id": 2,
+    "name": "Cheese Burger",
+    "rating": 5,
+    "price": "9.99",
+    "orgprice": "12.99",
+    "isPopular": false
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "rating": 4,
+    "price": "8.99",
+    "orgprice": "11.99",
+    "isPopular": false
+  }
+]
