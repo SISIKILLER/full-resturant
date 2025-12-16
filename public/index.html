@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bakery</title>
+    <style>
+      .header {
+        z-index: +2;
+      }
+        .shadoow {
+            box-shadow: 0 0 10px orangered;
+        }
+        .grad {
+          background: 
+          linear-gradient(#222222, #1a1a1a 45%, #383838 100%);
+        }
+        @font-face {
+          font-family: SuperCharge;
+          src: url(Supercharge.otf);
+        }
+        .svg-orange {
+          fill: rgb(182, 125, 18);
+        }
+        .zin {
+          z-index: 1;
+        }
+        .bgrights {
+          background: 
+          linear-gradient(#cc8500 0%, #eece93 50%,#ffffff 100%);
+        }
+        .trendsbg {
+          background: 
+          radial-gradient(#ffffff 0%,#e4e4e4 50% ,  #e6e6e6 100%);
+        }
+        .bgfooter {
+          background: 
+          linear-gradient(#222222 0%, #222222 50%,#222222 100%);
+        }
+        .maskedtxt {
+            background-color: #2f8d46;
+            background-image: url(
+            'textmask.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 200px;
+            font-size: 120px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: Supercharge;
+            font-weight: 800;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+  </head>
+  <body style="font-family: SuperCharge;" class="w-full overflow-x-hidden bg-gray-950">
+    <header class="w-[60%] h-[45px] bg-[#8b8b8b] opacity-[90%] fixed mx-auto left-0 right-0 mt-[10px] rounded-[25px] shadoow z-[2]" style="max-width: 800px;">
+      <nav class="flex justify-center gap-[40px] text-[10px] mt-[17px] text-white">
+       <a href="">Home</a>
+       <a href="">Menu</a>
+       <a href="">Discount</a>
+       <img src="fire.png" class="w-[45px] mt-[-20px] select-none" alt="">
+       <a href="">Gallery</a>
+       <a href="">Location</a>
+       <a href="">About</a>
+      </nav>
+    </header>
+    <div class="max-w-[1000px] md:scale-[100%] scale-[80%] md:max-w-[1000px] mx-auto">
+      
+      <div class="w-[100%] h-[550px] grad flex">
+        <div class="w-[50%] h-[550px] pt-[150px]">
+          <div class="flex">
+          <h1 class="text-[35px] ml-[60px] text-white">Beast </h1>
+          <h1 class="text-[35px] ml-[20px] text-orange-500">Burger</h1>
+          <h1 class="text-[35px] ml-[10px] text-white">.</h1>
+        </div>
+        <h2 class="text-[20px] ml-[60px] text-white">PKR 400</h2>
+        <div class="flex ml-[60px] mt-[10px] gap-3">
+          <div class="w-[70px] h-[25px]  bg-[#6e6d6d] mix-blend-screen rounded-[15px] border-white border flex justify-center gap-1 text-[10px] text-white">
+            <img src="fork.svg" class="w-[15px] svg-orange" alt="">
+            <h6 class="mt-[6px]">juicy</h6>
+          </div>
+          <div class="w-[100px] h-[25px]  bg-[#6e6d6d] mix-blend-screen rounded-[15px] border-white border flex justify-center gap-1 text-[10px] text-white">
+            <img src="fork.svg" class="w-[15px] svg-orange" alt="">
+            <h6 class="mt-[6px]">Toast Bum</h6>
+          </div>
+          <div class="w-[130px] h-[25px]  bg-[#6e6d6d] mix-blend-screen rounded-[15px] border-white border flex justify-center gap-1 text-[10px] text-white">
+            <img src="fork.svg" class="w-[15px] svg-orange" alt="">
+            <h6 class="mt-[6px]">Full of Flavor</h6>
+          </div>
+        </div>
+        <p class="text-[10px] text-white ml-[60px] mt-[25px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quos unde eligendi esse nulla et rerum molestiae quasi possimus, veritatis, a iusto fugiat, cum in sed est exercitationem quaerat officia.</p>
+        <div class="flex gap-[30px] ml-[60px] mt-[25px]">
+          <button class="w-[130px] h-[40px] bg-orange-500 rounded-[25px] text-white text-[13px] text-center place-content-center"><p class="mt-[5px]">Coming Soon...</p></button>
+          <a href="" class="text-[13px] mt-[12px] text-white">View Menu</a>
+        </div>
+        </div>
+        <div class="w-[50%] h-[550]">
+          <img src="burger.png" class="w-[100%]" alt="">
+        </div>    
+      </div>
+      <div class="w-[1000px]">
+      <div class="w-[100%] h-[1000px] bg-white">
+        <div class="w-[80%] h-[280px] bg-white relative m-auto bottom-[45px] rounded-[25px] p-[10px] shadow-2xl zin">
+          <div class="flex">
+          <div class="w-[50%]">
+          <h1>Our Popular Foods</h1>
+          </div>
+          <div class="w-[50%]">
+          <button class="float-right bg-orange-500 w-[100px] h-[30px] p-[5px] text-[13px] rounded-[25px] text-white ">See All</button>
+        </div>
+        </div>
+          <div id="popularfoods" class="flex justify-center gap-5 mt-[10px]"></div>
+        </div>
+         <div class="text-center mt-[45px] h-[100px]">
+          <h1 class="text-[25px]">Our Restaurant</h1>
+            <h5 class="text-[12px] text-gray-950 opacity-[50%]">"Discover our passion for authentic flavors and exceptional <br> dining experiences"</h3>
+         </div>
+         <!-- full slider -->
+          <div class="w-[full] h-[500px] flex bg-white scale-[90%]">
+            <div class="w-[50%] h-[500px]">
+              <div class="w-[90%] h-[150px] border-l-[3px] border-gray-600px ">
+                <div class="w-[90%] absolute h-[150px]">
+                  <div class="w-[50%] pl-[5%] ">
+                    <h1 class="opacity-[50%] text-gray-950">Restaurant Story</h1>
+                    <p class="text-[12px] text-gray-950 opacity-[40%] mt-[15px]">Our story begins with a love for real food and heartfelt hospitality. Every dish and detail reflects our passion for memorable dining.</p>
+                  </div>
+                </div>
+                <div class="w-[50px] h-[50px] bg-gray-300 rounded-[25px] bottom-[15px] right-[25px] relative justify-center place-content-center text-gray-600">
+                  <h1 class="text-center">01</h1>
+                </div>
+              </div>
+              <div class="w-[90%] h-[150px] border-l-[3px] border-gray-600px ">
+                <div class="w-[90%] absolute h-[150px]">
+                  <div class="w-[50%] pl-[5%]">
+                    <h1 class="opacity-[50%] text-gray-950">Service Highlights</h1>
+                    <p class="text-[12px] text-gray-950 opacity-[40%] mt-[15px]">we offer warm, personalized service that makes every visit feel special. from start to finish, your comfort is our priority.</p>
+                  </div>
+                </div>
+                <div class="w-[50px] h-[50px] bg-gray-300 rounded-[25px] bottom-[15px] right-[25px] relative justify-center place-content-center text-gray-600">
+                  <h1 class="text-center">02</h1>
+                </div>
+              </div>
+              <div class="w-[90%] h-[150px] border-l-[3px] border-gray-600px ">
+                <div class="w-[90%] absolute h-[150px]">
+                  <div class="w-[50%] pl-[5%]">
+                    <h1 class="opacity-[100%] text-gray-950">Menu Selection</h1>
+                    <p class="text-[12px] text-gray-950 opacity-[90%] mt-[15px]">Our diverse menu brings together fresh ingredients and bold flavors. Designed to satisfy every taste and craving.</p>
+                  </div>
+                </div>
+                <div class="w-[50px] h-[50px] bg-orange-500 rounded-[25px] bottom-[15px] right-[25px] relative justify-center place-content-center text-white">
+                  <h1 class="text-center">03</h1>
+                </div>
+              </div>
+              <div class="w-[90%] h-[150px] border-l-[3px] border-white ">
+                <div class="w-[90%] absolute h-[150px]">
+                  <div class="w-[50%] pl-[5%]">
+                    <h1 class="opacity-[50%] text-gray-950">Chef Team</h1>
+                    <p class="text-[12px] text-gray-950 opacity-[40%] mt-[15px]">Our chefs blend tradition with creativity to craft unforgettable meals.Passion, skill, and love go into every bite</p>
+                  </div>
+                </div>
+                <div class="w-[50px] h-[50px] bg-gray-300 rounded-[25px] bottom-[15px] right-[25px] relative justify-center place-content-center text-gray-600">
+                  <h1 class="text-center">04</h1>
+                </div>
+              </div>
+            </div>
+            <div class="w-[50%] h-[500px] bgrights rounded-t-[25px]">
+                <img class="rotate-[5deg] mt-[75px]" src="burger2.png" alt="">
+            </div>
+          </div>
+          <div class="w-full h-[550px] bg-gray-100 mt-[70px]  trendsbg">
+                  <h1 class="text-center pt-[50px] text-[20px]">We Love Trends</h1>
+                  <div id="fpl" class=" mt-[25px] "></div>                  
+          </div>
+          <div class="w-full h-[400px] pt-[50px] pl-[50px] bg-white asd">
+            <h1 class="text-[20px]">What Our Users Are Saying</h1>
+            <p class="text-[12px] mt-[10px] opacity-[50%]">See how our voicebot boosts productivity and streamlines <br> daily tasks for our users!</p>
+            <Button class="bg-orange-500 w-[150px] h-[35px] rounded-[25px] mt-[25px] justify-center flex">
+              <h1 class="text-white text-[12px] mt-[10px]">Try it Now</h1>
+              <img src="arrow.png" class="scale-[50%] ml-[5px]" class="" alt="">
+            </Button>
+            <div id="Comments" class="flex mt-[10px] gap-3">
+
+            </div>
+            
+          </div>
+          <footer class="w-full h-[350px] bg-red-600 pl-[0] ">
+          <div class="w-full h-[350px] bgfooter rounded-tl-[600px]">
+            <div class="flex">
+            <div class="w-[30%] h-[200] pl-10 pt-10">
+              <h1 class="text-white text-[25px] text-nowrap">Join to Burger <br> Restaurant</h1>
+            </div>
+            <div class="w-[30%] h-[200] pl-[10%] text-white text-[12px] pt-[80px]">
+              <nav>
+                <h1 class="mb-[30px] ">Navigation Link</h1>
+                <div class="opacity-[60%] ">
+                <a href="">About Us</a><br>
+                <a href="">Menu</a><br>
+                <a href="">Events</a><br>
+                <a href="">Blog</a><br>
+                <a href="">Contact Us</a>
+              </div>
+              </nav>
+            </div>
+            <div class="w-[150px] h-[75px] pl-[10%] pt-[80px] text-[12px] text-white text-nowrap">
+                  <h1 class="mb-[25px]">Contact Us</h1>
+                  <div class="flex-wrap grid grid-cols-2 grid-rows-2 gap-[50px]">
+                    <button class="w-[35px] h-[35px] rounded-[25px] bg-orange-500">
+                      <img class="scale-[50%]" src="instagram.png" alt="">
+                    </button>
+                    <button class="w-[35px] h-[35px] rounded-[25px] bg-orange-500">
+                      <img class="scale-[80%]" src="facebook.png" alt="">
+                    </button>
+                    <button class="w-[35px] h-[35px] mt-[-25px] rounded-[25px] bg-orange-500">
+                      <img class="scale-[70%]" src="twitter1.png" alt="">
+                    </button>
+                    <button class="w-[35px] h-[35px] mt-[-25px] rounded-[25px] bg-orange-500">
+                      <img class="scale-[50%]" src="instagram.png" alt="">
+                    </button>
+                  </div>
+            </div>
+          </div>
+          <div >
+            <h1 class="text-center text-[50px] mt-[40px] maskedtxt">BEST FAST FOOD IN TURKEY</h1>
+          </div>
+          </div>
+          </footer>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+  </body>
+</html>
